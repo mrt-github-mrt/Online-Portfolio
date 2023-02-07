@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portfolio</title>
+    <style>
+        .my_languages {
+            margin: 10px;
+            color: black;
+        }
+        .my_courses {
+            margin: 10px;
+            color: black;
+        }
+
+        .my_buttons{
+            color: gray;
+            padding: 2px;
+            background-color: blue;
+            border-radius: 10px 10px;
+            text-decoration: none;
+        }
+      
+        .web-form {
+            border: 2px solid black;
+            padding: 5px;
+            background-color: lightslategray;
+            color: black;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+
+<h1>M.R.T.</h1>
+
+Born in July, 1972, I graduated from university with degrees in Mathematics and Computer Science.
+I am fluent in English and I am learning French.  I am currently seeking employment in the 
+information technology sector.   Projects I have been involved with include
+
+data acquisition and analysis systems
+<a class="my_buttons" href="https://www.ni.com/en-ca/shop/data-acquisition.html" alt="Learn DAQ"><span>Learn DAQ</span></a>,
+
+and compiler design and implementation <a class="my_buttons" href="https://llvm.org/" alt="Popular Compilers"><span>Popular Compilers</span></a>.  
+
+Activities I enjoy include cycling, long-distance walking, and 
+photography.
+
+<div class="my_languages">
+Languages:
+    <ul>
+        <li>English</li>
+        <li>French</li>
+    </ul> 
+</div>
+
+<div class="my_courses">
+    Courses:
+    <ol>
+        <li>Compilers</li>
+        <li>Theory of Computation</li>
+        <li>Complex Analysis</li>
+        <li>Theory of Objects</li>
+        <li>Theory of Numbers</li>
+        <li>Programming Languages</li>
+        <li>Multivariable Calculus</li>
+    </ol>
+</div>
+
+<br>
+<form class="web-form" action="">
+        <div class="elem">
+            <label for="fname"> Name:</label>
+            <input id="fname" type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="elem">
+            <label for="femail"> Email:</label>
+            <input id="femail" type="email" name="email" placeholder="name@server.com" required>
+        </div>
+    
+
+        <div class="elem">
+            <label for="fage"> Age: </label>
+            <input id="fage"type="number" name="age" value="18" required>
+        </div>
+
+      
+        <div class="elem">
+            <label for="frequest">Request:</label>
+                <textarea id="frequest" name="request">Your request</textarea>
+        </div>
+        <button id="wform-submit" type="submit">Submit</button>
+</form> 
+</body>
+</html>
